@@ -1,0 +1,524 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'SF_HambakSnow';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.notosanskr * {
+ font-family: 'Noto Sans KR', sans-serif;
+}
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,body { height: 100% }
+body {
+  min-width: 1320px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #666666;
+}
+
+ul,ol { list-style: none; }
+h1,h2,h3,h4,h5,h6 { line-height: 1;
+color: #444 }
+h2 { color: #444; }
+
+#header-wrap {
+  /* position: fixed; */
+  width: 100%;
+  margin: 0 auto;
+  /* background: #fcf9ed; */
+  /* background: rgba(255, 235, 120, .1); */
+  z-index: 300;
+  box-shadow: 0 1px 1px -1px rgb(255, 235, 120);
+}
+
+#header {
+  width: 1320px;
+  margin: 0 auto;
+  padding: 20px 20px 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 300;
+}
+
+#logo {
+  float: left;
+}
+
+#header .inner { float: right; }
+
+#header .inner > ul {
+  overflow: hidden;
+}
+
+#header .inner > ul > li {
+  float: left;
+}
+
+#header .inner > ul > li > a {
+  line-height: 25px;
+  color: #3e3e3e;
+}
+
+/* 호버 효과 */
+/*
+.btn01::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #000;
+  -webkit-transform: scaleX(.3);
+  transform: scaleX(.3);
+  opacity: 0;
+  transition: all .3s
+}
+.btn01:hover::before{
+  opacity: 1;
+  background-color: #6098FF;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
+  transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
+} */
+
+/* home~works 간격 */
+.inner > ul > li {
+ margin-left: 80px;
+}
+
+/* redesign~냠냠냠 */
+.nav {
+  position: fixed;
+  overflow: hidden;
+  width:100%;
+  top: 96%;
+  padding: 10px 20px 10px;
+  /* left: 50%; */
+  z-index: 100;
+  padding-left: 600px;
+  background: #fff;
+  /* border-top: 1px solid rgba(247, 197, 85, .2); */
+}
+
+.nav li {
+  padding-bottom: 20px;
+  /* 순서대로 왼쪽에서 오른쪽으로 정렬 */
+  float: left;
+}
+
+.nav li a {
+  display: inline-block;
+  color: #000;
+  transition: all 0.3s;
+  /* text-shadow: 1 1 3px rgba(255, 160, 0, 0.5); */
+}
+
+#header li:hover a, .nav li:hover a {
+  opacity: 0.5;
+}
+
+.nav li p {
+  display: inline-block;
+  background: #f7c555;
+  width: 4px;
+  height: 14px;
+  margin-bottom: -2px;
+  margin-right: 5px;
+  margin-left: 10px;
+  box-shadow: 0 1px 5px rgba(255, 255, 255, 0.5);
+}
+
+/* 포트폴리오 바탕이미지 */
+#mainbanner .inner .img.box {
+  float: left;
+  /* width: 50%; */
+  min-width: 50%;
+  min-height: 910px;
+  /* height: 100vh; */
+  background-image: url(../img/img3.gif);
+  background-repeat: no-repeat;
+  background-position: top 130px left -50px;
+  background-size: auto 77%;
+  background-color: rgba(255, 235, 120, .13);
+  /* background-color: #fff; */
+}
+
+#mainbanner .main_inside {
+  position: relative;
+  min-width: 50%;
+  /* height: 100vh; */
+  min-height: 910px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -50px;
+ }
+
+#mainbanner section .textbox {
+  /* float: left; */
+}
+
+.inside {
+  position: relative;
+  height: 800px;
+  /* height: 100vh; */
+  display: flex;
+  /* 화면의 메인축 방향 중앙으로 정렬 */
+  justify-content: center;
+  /* 화면 상하 위아래 중앙으로 정렬 */
+  align-items: center;
+  /* margin: 0 auto; */
+}
+
+.inside.skill, .inside.project {
+  position: relative;
+  /* height: 700px; */
+  height: 100vh;
+  display: flex;
+  /* 화면의 메인축 방향 중앙으로 정렬 */
+  justify-content: center;
+  /* 화면 상하 위아래 중앙으로 정렬 */
+  align-items: center;
+  /* margin: 0 auto; */
+}
+
+.inside.project {
+  margin-bottom: 200px;
+}
+
+
+#container, #mainbanner {
+  text-align: center;
+}
+
+#mainbanner .items:nth-child(1) {
+  width: 700px;
+}
+
+#mainbanner .wrap {
+  /* left: 600px; */
+  width: auto;
+  height: 120px;
+  background-color: rgba(255, 235, 120, .5);
+  border-radius: 20px;
+}
+
+#mainbanner .typing-wrap {
+  /* height: 100vh; */
+ /*This part is important for centering*/
+ display: grid;
+ place-items: center;
+}
+
+/* 웹퍼블리셔 */
+#mainbanner h3 {
+  font-family: 'SEBANG_Gothic_Bold';
+  color: #000;
+  width: 20ch;
+  font-size: 60px;
+  line-height: 120px;
+  letter-spacing: -2px;
+  padding: 0px 0px 10px 0px ;
+  animation: typing 2s steps(20), .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  /* font-weight: 500; */
+  /* border-right: 2px solid; */
+}
+
+/* 안녕하세요~ */
+#mainbanner p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+#mainbanner .itmes {
+  /* text-align: center; */
+}
+/* 가나다라마바사 */
+#mainbanner .items .name {
+  margin-top: 30px;
+  font-size: 35px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+/* 황선하입니다 */
+#mainbanner .items .name strong {
+  font-size: 30px;
+  line-height: 1.5em;
+}
+
+.progressbar .items-wrap{
+  width: 800px;
+  margin-top: 40px;
+}
+
+.progressbar .items01 {
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 2px 0px 2px rgba(0,0,0, .5);
+  text-shadow: 1px 1px 2px rgba(0,0,0, .8);
+  padding: 0px 20px;
+  /* width: 120px; */
+  height: 50px;
+  line-height: 50px;
+  font-size: 17px;
+  /* box-shadow: 0px 0px 0px 0px #21825B; */
+}
+
+.items-wrap:hover {
+  /* box-shadow: 0px 0px 0px 5px #f7cb05; */
+  box-shadow:
+     0 0 3px 3px #fff,  /* inner white */
+     0 0 9px 4px #fccb90, /* middle magenta */
+     0 0 0px 2px #a8edea; /* outer cyan */
+ }
+
+/* skill */
+.progressbar .items01.html5 {
+  width: 70%;
+  /* background-color: #f9d423; */
+  background: linear-gradient(to left, #f9d423 , #fff7e0)
+}
+
+.progressbar .items01.css3 {
+  width: 60%;
+  /* background-color: #fda085; */
+  background: linear-gradient(to left, #fda085 , #fff7e0)
+}
+
+.progressbar .items01.javascript {
+  width: 50%;
+  background-color: #fccb90;
+  background: linear-gradient(to left, #fccb90 , #fff7e0)
+}
+
+.progressbar .items01.sass {
+  width: 70%;
+  background-color: #a8edea;
+  background: linear-gradient(to left, #a8edea , #fff7e0)
+}
+
+.progressbar .items01 .title {
+  float: left;
+  color: #666;
+  font-weight: 700;
+  text-shadow: none;
+}
+
+.progressbar .items01 .percent {
+  float: right;
+}
+
+/* #mainbanner .items .left {
+  position: absolute;
+  left: 500px;
+  top: 200px;
+} */
+
+/* 도형과 글자너비가 달라서 박스나 버튼 여러개의 너비가 다를경우에는 부모요소에 display:flex를 주고,
+자식요소에 flex-basis:25%를주면 균등하게 도형이 만들어진다. */
+.btn {
+  /* display: inline-block; */
+  height: 37px;
+  line-height: 35px;
+  font-size: 16px;
+  border: 2px solid orange;
+  /* background-color: #666; */
+  /* padding: 0px 20px; */
+  flex-basis: 25%;
+  margin-right: 15px;
+  color: #ff9500;
+  border-radius: 10px;
+}
+
+br + .btn {
+  margin-top: 20px;
+}
+
+#container a:hover{
+  background: orange;
+  color: white;
+}
+
+.btnwrap {
+  display: flex;
+  /* justify-content: center; */
+  padding-top: 30px;
+}
+
+.btnwrap .btn p {
+  display: inline-block;
+}
+
+.btn > img {
+  vertical-align: middle;
+  line-height: 20px;
+  margin-right: 2px;
+}
+
+h2 {
+  font-size: 35px;
+  /* font-family: 'SF_HambakSnow'; */
+  font-family: 'SEBANG_Gothic_Bold';
+}
+
+.inside .img {
+  text-align: center;
+  margin: 15px 0px;
+}
+
+.items-wrap {
+  overflow: hidden;
+  color: #fff;
+  background: red;
+  /* background: rgba(255,255,255,.3) */
+  background: #fff7e0;
+}
+
+/* 마우스오버시 스크롤 */
+/* https://codepen.io/moretz0921/full/WNemqrx */
+
+section .img {
+  display: inline-block;
+  box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+}
+
+section .content-wrap {
+  /* position: absolute; */
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  /* text-align: left; */
+  transform: translate(10%, -30%);
+}
+
+section .content-wrap .textwrap{
+  text-align: left;
+}
+
+#project {
+  background-color: rgba(255, 235, 120, .13);
+  height: 100%;
+}
+
+#project h2 {
+  /* margin-top: 350px; */
+}
+
+#project .inside .wrap {
+  overflow: hidden;
+}
+
+#project .inside .wrap li {
+  /* 왼쪽부터 일자로 정렬 */
+  float: left;
+  width: calc( 33% );
+}
+
+#project .inside .wrap .img-wrap {
+  margin-bottom: 30px;
+}
+
+#project .img{
+  margin: 50px 10px;
+  background-size: cover;
+  width: 550px;
+  height: 300px;
+}
+
+#project .img.corsx { background-image: url(../img/corsximg.png); }
+#project .img.beplain { background-image: url(../img/beplain.png); }
+
+#project .text {
+  background: #000;
+  opacity: 0;
+}
+
+#project .text {
+  /* height: 300px; */
+}
+
+#project .img:hover .text {
+  opacity: 0.5;
+  text-align: center;
+  color: #fff;
+  transition: .3s;
+}
+
+#project .items a:hover {
+  background: none;
+}
+
+#project .text p {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 270px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.textwrap ul li h4 {
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #444;
+}
+
+.textwrap ul li {
+  font-weight: 300;
+}
+
+/* 마우스 호버시 스크롤 효과 */
+/* #container .scroll:before {
+  content: "";
+  display: block;
+  padding-top: 60%;
+}
+
+.#container .scroll .img img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 4%;
+  background: #333;
+}
+
+#container .scroll .img img {
+  transition: background-position 3s ease;
+  background-position: 0 0;
+  background-size: 100% auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.img:hover img {
+  background-position: 0 100%;
+} */

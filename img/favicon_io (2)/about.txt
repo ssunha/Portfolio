@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Birthstone Bounce
+- Font Author: Copyright 2019 The Birthstone Bounce Project Authors (https://github.com/googlefonts/birthstone-bounce)
+- Font Source: http://fonts.gstatic.com/s/birthstonebounce/v9/ga6XaxZF43lIvTWrktHOTBJZGH7dEeVJGIMYDo_8.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
